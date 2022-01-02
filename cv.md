@@ -8,6 +8,7 @@ Channel  | Contact
 phone    | +375 44 768-07043
 e-mail   | dmitry.nayd@gmail.com
 telegram | @belveter 
+Discord  | BelVeter#9280
 
 ### About myself: ###
 I’m a creative, out of the box thinking man with sound experience in b2b banking within RBI international banking group.
