@@ -32,19 +32,110 @@
     <div class="container main-conteiner">
       <section class="section" id="">
         <h1 class="section-title">Dmitry Naydenov</h1>
-        <p class="section-body"></p>
+        <p class="section-body"><img src="photo.png" alt="Dmitry Naydenov photo"></p>
       </section>
       <section class="section" id="">
-        <h2>Summary</h2>
-        <p></p>
+        <h2>Contact details:</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Channel</th>
+              <th>Contact</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>phone</td>
+              <td>+375 44 768-07043</td>
+            </tr>
+            <tr>
+              <td>e-mail</td>
+              <td>dmitry.nayd@gmail.com</td>
+            </tr>
+            <tr>
+              <td>telegram</td>
+              <td>@belveter</td>
+            </tr>
+            <tr>
+              <td>Discord</td>
+              <td>BelVeter#9280</td>
+            </tr>
+          </tbody>
+        </table>
       </section>
+      <section class="section" id="">
+        <h2>Summary:</h2>
+        <p>
+          I’m a creative, out of the box thinking man with sound experience in b2b banking within RBI international banking group.<br>
+          In addition to banking background I have technical experience in developing WEB applications (self-education in PHP, MYSQL & HTML + 1,5 Y intensive retraining program of State University of Informatics and Radioelectronics (Minsk, Belarus)).<br>
+          I’ve decided to change the industry and make a deep dive into IT, as I strongly believe it is the basis of all future businesses. And I simply like it :)
+        </p>
+      </section>
+
+
       <section class="section" id="">
         <h2>Skills</h2>
-        <p></p>
+        <ul>
+          <li>HTML &amp; CSS</li>
+          <li>JavaScript (basics),</li>
+          <li>JQuery (basics)</li>
+          <li>Bootstrap 4 (basics)</li>
+          <li>MySQL</li>
+          <li>PHP</li>
+          <li>Git, GitHub</li>
+        </ul>
       </section>
       <section class="section" id="">
-        <h2></h2>
-        <p></p>
+        <h2>Code example</h2>
+        <p>
+          <code>
+            <pre>
+              <code>
+                function phone_print ($ph) {
+                  if ($ph=='') {return '';}
+
+                  $dl=strlen($ph);
+
+                  if ($dl&lt;7) {return $ph;}
+
+                  $dl&gt;7 ? $dl_to=$dl-7 : $dl_to=0;
+                  $ph_out=substr($ph, 0, $dl_to).'-'.substr($ph, -7, 3).'-'.substr($ph, -4, 2).'-'.substr($ph, -2, 2);
+
+                  return $ph_out;
+                }
+            </code>
+            </pre>
+          </code>
+        </p>
+      </section>
+      <section class="section" id="">
+        <h2>‘Code-related’ experience:</h2>
+        <ul>
+          <li>kids rental service website with embedded CRM, accounting systems (<a href="http://www.tiktak.by/index.html" title="kids rental service">website</a>)</li>
+          <li>kids rental service with adaptive design (<a href="https://tik-tak.lt/" title="kids rental service 2">website</a>)</li>
+        </ul>
+      </section>
+      <section class="section" id="">
+        <h2>‘non Code-related’ experience:</h2>
+        <ul>
+          <li>product owner\project manager for corporate legal entities risk-related business (lending+)</li>
+        </ul>
+      </section>
+      <section class="section" id="">
+        <h2>Aducation:</h2>
+        <ul>
+          <li>2021: IT-Academy. Course: Project management in IT</li>
+          <li>2020: Agile LAB. Course: Agile methodologies (SCRUM, Kanban)</li>
+          <li>2016 – 2019: State University of Informatics and Radioelectronics (Information systems software development (intensive retraining course))</li>
+          <li>1997 – 2002: State Economic University (banking & finance)</li>
+        </ul>
+      </section>
+      <section class="section" id="">
+        <h2>Languages:</h2>
+        <ul>
+          <li><strong>English:</strong> B2 <em>(fluent communication skills)</em></li>
+          <li><strong>Russian:</strong> native</li>
+        </ul>
       </section>
     </div>
   </main>
