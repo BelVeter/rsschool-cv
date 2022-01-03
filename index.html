@@ -18,15 +18,17 @@
 <body>
 
   <header class="header">
-    <div class="container">
+    <div class="container header-container">
+      <button class="btn">Меню</button>
       <nav class="nav">
         <ul class="nav-list">
           <li class="nav-item"><a class="nav-link" href="#contacts">contacts</a></li>
           <li class="nav-item"><a class="nav-link" href="#summary">summary</a></li>
           <li class="nav-item"><a class="nav-link" href="#skills">skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">education</a></li>
           <li class="nav-item"><a class="nav-link" href="#code">code</a></li>
-          <li class="nav-item"><a class="nav-link" href="#experience">projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">projects</a></li>
           <li class="nav-item"><a class="nav-link" href="#languages">languages</a></li>
         </ul>
       </nav>
@@ -34,42 +36,37 @@
   </header>
 
   <main class="main">
-    <div class="container main-conteiner">
-      <section class="section" id="main">
+    <div class="container main-container">
+      <section class="section main-section" id="main">
         <h1 class="section-title">Dmitry Naydenov</h1>
-        <p class="section-body"><img src="photo.png" alt="Dmitry Naydenov photo"></p>
+        <img class="photo" src="./pictures/photo.png" alt="Dmitry Naydenov photo">
       </section>
-      <section class="section" id="contacts">
+      <section class="section main-section" id="contacts">
         <h2>Contact details:</h2>
-        <table>
-          <thead>
-            <tr>
-              <th>Channel</th>
-              <th>Contact</th>
-            </tr>
-          </thead>
+        <table class="contact-table">
           <tbody>
             <tr>
-              <td>phone</td>
-              <td>+375 44 768-07043</td>
+              <td class="col1">phone</td>
+              <td><a href="tel:+3754476807043">+375 44 768-07043</a></td>
             </tr>
             <tr>
-              <td>e-mail</td>
-              <td>dmitry.nayd@gmail.com</td>
+              <td class="col1">e-mail</td>
+              <td><a href="mailto:dmitry.nayd@gmail.com">dmitry.nayd@gmail.com</a></td>
             </tr>
             <tr>
-              <td>telegram</td>
+              <td class="col1">telegram</td>
               <td>@belveter</td>
             </tr>
             <tr>
-              <td>Discord</td>
+              <td class="col1">Discord</td>
               <td>BelVeter#9280</td>
             </tr>
           </tbody>
         </table>
       </section>
+      <div class="divider"></div>
       <section class="section" id="summary">
-        <h2>Summary:</h2>
+        <h2>Summary</h2>
         <p>
           I’m a creative, out of the box thinking man with sound experience in b2b banking within RBI international banking group.<br>
           In addition to banking background I have technical experience in developing WEB applications (self-education in PHP, MYSQL & HTML + 1,5 Y intensive retraining program of State University of Informatics and Radioelectronics (Minsk, Belarus)).<br>
@@ -88,46 +85,21 @@
           <li>MySQL</li>
           <li>PHP</li>
           <li>Git, GitHub</li>
+          <li>Product management</li>
+          <li>Project management</li>
+          <li>b2b sales</li>
         </ul>
-      </section>
-      <section class="section" id="code">
-        <h2>Code example</h2>
-        <p>
-          <code>
-            <pre>
-              <code>
-                function phone_print ($ph) {
-                  if ($ph=='') {return '';}
-
-                  $dl=strlen($ph);
-
-                  if ($dl&lt;7) {return $ph;}
-
-                  $dl&gt;7 ? $dl_to=$dl-7 : $dl_to=0;
-                  $ph_out=substr($ph, 0, $dl_to).'-'.substr($ph, -7, 3).'-'.substr($ph, -4, 2).'-'.substr($ph, -2, 2);
-
-                  return $ph_out;
-                }
-            </code>
-            </pre>
-          </code>
-        </p>
       </section>
       <section class="section" id="experience">
-        <h2>‘Code-related’ experience:</h2>
+        <h2>Experience</h2>
         <ul>
-          <li>kids rental service website with embedded CRM, accounting systems (<a href="http://www.tiktak.by/index.html" title="kids rental service">website</a>)</li>
-          <li>kids rental service with adaptive design (<a href="https://tik-tak.lt/" title="kids rental service 2">website</a>)</li>
-        </ul>
-      </section>
-      <section class="section" id=experience-2"">
-        <h2>‘non Code-related’ experience:</h2>
-        <ul>
-          <li>product owner\project manager for corporate legal entities risk-related business (lending+)</li>
+          <li><strong>09/2021 – 12/2021</strong> <br>Key account manager, Andersenlab, Minsk Belarus.</li>
+          <li><strong>03/2014 – now</strong>  <br>Web site (tiktak.by) development & support with integrated СRM & accounting system (HTML, PHP, CSS, MySQL, JQuery)</li>
+          <li><strong>04/2004 – 08/2021</strong> <br>Manager -> Risk manager -> Head of portfolio management -> Head of corporate business development department at Priorbank JSC (RBI Group)</li>
         </ul>
       </section>
       <section class="section" id="education">
-        <h2>Education:</h2>
+        <h2>Education</h2>
         <ul>
           <li>2021: IT-Academy. Course: Project management in IT</li>
           <li>2020: Agile LAB. Course: Agile methodologies (SCRUM, Kanban)</li>
@@ -135,8 +107,35 @@
           <li>1997 – 2002: State Economic University (banking & finance)</li>
         </ul>
       </section>
+      <section class="section" id="code">
+        <h2>Code example</h2>
+        <pre>
+<code class="code">
+function phone_print ($ph) {
+  if ($ph=='') {return '';}
+
+  $dl=strlen($ph);
+
+  if ($dl&lt;7) {return $ph;}
+
+  $dl&gt;7 ? $dl_to=$dl-7 : $dl_to=0;
+  $ph_out=substr($ph, 0, $dl_to).'-'.substr($ph, -7, 3).'-'.substr($ph, -4, 2).'-'.substr($ph, -2, 2);
+
+  return $ph_out;
+}
+</code>
+        </pre>
+      </section>
+      <section class="section" id="projects">
+        <h2>Projects</h2>
+        <ul>
+          <li>kids rental service website with embedded CRM, accounting systems (<a href="http://www.tiktak.by/index.html" title="kids rental service">website</a>)</li>
+          <li>kids rental service with adaptive design (<a href="https://tik-tak.lt/" title="kids rental service 2">website</a>)</li>
+        </ul>
+      </section>
+
       <section class="section" id="languages">
-        <h2>Languages:</h2>
+        <h2>Languages</h2>
         <ul>
           <li><strong>English:</strong> B2 <em>(fluent communication skills)</em></li>
           <li><strong>Russian:</strong> native</li>
@@ -146,7 +145,12 @@
   </main>
 
   <footer class="footer">
-    <div class="container">&copy;<a href="https://belveter.github.io/rsschool-cv/">BelVeter</a>, 2022 <a href="https://rs.school/js/"><img src="rs_school_js.svg" alt="Курс «JavaScript/Front-end»"></a></div>
+    <div class="container footer-container">
+      <div>&copy;<a href="https://belveter.github.io/rsschool-cv/">BelVeter</a>, 2022</div>
+      <div>
+        <a href="https://rs.school/js/"><img src="./pictures/rs_school_js.svg" alt="Курс JavaScript/Front-end" height="50" width="135"></a>
+      </div>
+    </div>
   </footer>
 
 </body>
