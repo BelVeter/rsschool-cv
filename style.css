@@ -41,6 +41,15 @@ body {
   transition: 0.5s;
 }
 
+.main-conteiner {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section {
+  width: 50%;
+}
+
 .header {
   background-color: green;
 }
@@ -51,4 +60,11 @@ body {
 
 .footer {
   background-color: blue;
+}
+
+
+@media (max-width: 768px) {
+  .section {
+    width: 100%;
+  }
 }
