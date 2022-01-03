@@ -1,0 +1,15 @@
+body{
+    margin: 0;
+}
+.container{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.container img {
+    flex-basis: max-content;
+}
+.container h1{
+    text-align: center;
+}
