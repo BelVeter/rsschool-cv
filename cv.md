@@ -5,49 +5,71 @@
 
 Channel  | Contact
 ---------|:--------:
-phone    | +375 44 768-07043
+phone    | +48 573 172 900
 e-mail   | dmitry.nayd@gmail.com
 telegram | @belveter 
 Discord  | BelVeter#9280
 
 ### About myself: ###
-I’m a creative, out of the box thinking man with sound experience in b2b banking within RBI international banking group.
- 
-In addition to banking background I have technical experience in developing WEB applications (self-education in PHP, MYSQL & HTML + 1,5 Y intensive retraining program of State University of Informatics and Radioelectronics (Minsk, Belarus)).
-
-I've decided to change the industry and make a deep dive into IT, as I strongly believe it is the basis of all future businesses. And I simply like it :)
-
+I’m a creative, out of the box thinking man with sound experience in b2b product\project management in FinTech (international banking group).
+Also have programming experience in Front & Back development of WEB applications (JavaScript, PHP, MYSQL & HTML+CSS).
+Just moved to Poland and currently build my career here.
+Currently I study JavaScript at RSS School (stage 1) and I like it :)
 
 ### Skills: ###
 * HTML & CSS
-* JavaScript (basics), 
-* JQuery (basics)
-* Bootstrap 4 (basics)
+* Core JavaScript
+* JQuery
+* Bootstrap
 * MySQL
 * PHP
 * Git & GitHub
 
 ### Code example:
 ```
-function phone_print ($ph) {
-    if ($ph=='') {return '';}
-	
-    $dl=strlen($ph);
-	
-    if ($dl<7) {return $ph;}
-	
-    $dl>7 ? $dl_to=$dl-7 : $dl_to=0;
-    $ph_out=substr($ph, 0, $dl_to).'-'.substr($ph, -7, 3).'-'.substr($ph, -4, 2).'-'.substr($ph, -2, 2);
-    return $ph_out;
+async function statusAction(e) {
+
+        let data = {};
+        data.action = "newstatus";
+        data.newStatus = e.target.dataset.newstatus;
+        data.delId = document.querySelector('[data-modal="delid"]').value;
+        
+        let url = 'xxx.php';
+
+        let headers = {
+            'Content-type': 'application/json; charset=UTF-8'
+        };
+
+        let request = {
+            method: 'POST',
+            body: JSON.stringify(data),
+            headers
+        }
+
+        let rez = await fetch(url, request);
+        let rezJson = await rez.json();
+        let heart = document.querySelector('.cur-action[data-delid="'+rezJson['delId']+'"]');
+        
+        if(rezJson['newStatus']=='done') {
+            heart.classList.add('done');
+            heart.classList.remove('fail');
+        }
+        else if (rezJson['newStatus']=='fail') {
+            heart.classList.add('fail');
+            heart.classList.remove('done');
+        }
+        else {
+            heart.classList.remove('done');
+            heart.classList.remove('fail');
+        }
+        
+        closeModal();
 }
 ```
 
-### 'Code-related' experience: ###
-- kids rental service website with embedded CRM & accounting systems ([website](http://www.tiktak.by/index.html "kids rental service"))
-- kids rental service with adaptive design ([website](https://tik-tak.lt/ "kids rental service 2"))
-
-### 'non Code-related' experience: ###
-product owner\project manager for corporate legal entities risk-related business (lending+)
+### experience: ###
+- 2009 - 2021 product\project manager for B2B FinTech products (RBI Group International)
+- 2018 - now FullStack developer (kids rental service website with embedded CRM & accounting systems ([website](http://www.tiktak.by/index.html "kids rental service")), ([website](https://tik-tak.lt/ "kids rental service 2"))
 
 
 ### Aducation: ###
@@ -56,6 +78,15 @@ product owner\project manager for corporate legal entities risk-related business
 * 2016 – 2019: State University of Informatics and Radioelectronics (Information systems software development (intensive retraining course))
 * 1997 – 2002: State Economic University (banking & finance)
 
+
+### Portfolio: ###
+* ([website](http://www.tiktak.by/portfolio/ "Portfolio Site (training task)"))
+* ([website](http://www.tiktak.by/jstr/ "tic-tak-toe"))
+* ([website](https://tik-tak.lt/ "Kids rental service LT"))
+* ([website](https://staralliancerealty.com/ "Real Estate agency"))
+
+
 ### Languages: ###
-- **English:** B2 _(fluent communication skills)_
+- **English:** B2 _(fluent communication skills)_ 
 - **Russian:** native 
+- **Belorussian:** B2
