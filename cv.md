@@ -70,7 +70,7 @@ async function statusAction(e) {
 
 ### experience: ###
 - 2009 - 2021 product\project manager for B2B FinTech products (RBI Group International)
-- 2018 - now FullStack developer (kids rental service website with embedded CRM & accounting systems ([website](http://www.tiktak.by/index.html "kids rental service")), ([website](https://tik-tak.lt/ "kids rental service 2"))
+- 2018 - now FullStack developer (kids rental service website with embedded CRM & accounting systems ([website 1](http://www.tiktak.by/index.html "kids rental service")), ([website 2](https://tik-tak.lt/ "kids rental service 2"))
 
 ### Aducation: ###
 * 2021: IT-Academy. Course: Project management in IT
@@ -79,10 +79,10 @@ async function statusAction(e) {
 * 1997 – 2002: State Economic University (banking & finance)
 
 ### Portfolio: ###
-* ([website](http://www.tiktak.by/portfolio/ "Portfolio Site (training task)"))
-* ([website](http://www.tiktak.by/jstr/ "tic-tak-toe"))
-* ([website](https://tik-tak.lt/ "Kids rental service LT"))
-* ([website](https://staralliancerealty.com/ "Real Estate agency"))
+* ([Photo portfolio](http://www.tiktak.by/portfolio/ "Portfolio Site (training task)"))
+* ([tic-tak-toe](http://www.tiktak.by/jstr/ "tic-tak-toe"))
+* ([Kids rental service LT](https://tik-tak.lt/ "Kids rental service LT"))
+* ([Real Estate agency](https://staralliancerealty.com/ "Real Estate agency"))
 
 ### Languages: ###
 - **English:** B2 _(fluent communication skills)_ 
