@@ -50,6 +50,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   padding: 0 30px;
+  max-width: 1200px;
 }
 
 .section {
