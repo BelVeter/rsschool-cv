@@ -111,17 +111,43 @@
         <h2>Code example</h2>
         <pre>
 <code class="code">
-function phone_print ($ph) {
-  if ($ph=='') {return '';}
+  async function statusAction(e) {
 
-  $dl=strlen($ph);
+    let data = {};
+    data.action = "newstatus";
+    data.newStatus = e.target.dataset.newstatus;
+    data.delId = document.querySelector('[data-modal="delid"]').value;
 
-  if ($dl&lt;7) {return $ph;}
+    let url = 'xxx.php';
 
-  $dl&gt;7 ? $dl_to=$dl-7 : $dl_to=0;
-  $ph_out=substr($ph, 0, $dl_to).'-'.substr($ph, -7, 3).'-'.substr($ph, -4, 2).'-'.substr($ph, -2, 2);
+    let headers = {
+        'Content-type': 'application/json; charset=UTF-8'
+    };
 
-  return $ph_out;
+    let request = {
+        method: 'POST',
+        body: JSON.stringify(data),
+        headers
+    }
+
+    let rez = await fetch(url, request);
+    let rezJson = await rez.json();
+    let heart = document.querySelector('.cur-action[data-delid="'+rezJson['delId']+'"]');
+
+    if(rezJson['newStatus']=='done') {
+        heart.classList.add('done');
+        heart.classList.remove('fail');
+    }
+    else if (rezJson['newStatus']=='fail') {
+        heart.classList.add('fail');
+        heart.classList.remove('done');
+    }
+    else {
+        heart.classList.remove('done');
+        heart.classList.remove('fail');
+    }
+
+    closeModal();
 }
 </code>
         </pre>
