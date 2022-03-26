@@ -16,6 +16,7 @@ Also have programming experience in Front & Back development of WEB applications
 Just moved to Poland and currently build my career here.
 Currently I study JavaScript at RSS School (stage 1) and I like it :)
 
+
 ### Skills: ###
 * HTML & CSS
 * Core JavaScript
@@ -67,9 +68,12 @@ async function statusAction(e) {
 }
 ```
 
-### experience: ###
-- 2009 - 2021 product\project manager for B2B FinTech products (RBI Group International)
-- 2018 - now FullStack developer (kids rental service website with embedded CRM & accounting systems ([website](http://www.tiktak.by/index.html "kids rental service")), ([website](https://tik-tak.lt/ "kids rental service 2"))
+### 'Code-related' experience: ###
+- kids rental service website with embedded CRM & accounting systems ([website](http://www.tiktak.by/index.html "kids rental service"))
+- kids rental service with adaptive design ([website](https://tik-tak.lt/ "kids rental service 2"))
+
+### 'non Code-related' experience: ###
+product owner\project manager for corporate legal entities risk-related business (lending+)
 
 
 ### Aducation: ###
@@ -78,15 +82,6 @@ async function statusAction(e) {
 * 2016 – 2019: State University of Informatics and Radioelectronics (Information systems software development (intensive retraining course))
 * 1997 – 2002: State Economic University (banking & finance)
 
-
-### Portfolio: ###
-* ([website](http://www.tiktak.by/portfolio/ "Portfolio Site (training task)"))
-* ([website](http://www.tiktak.by/jstr/ "tic-tak-toe"))
-* ([website](https://tik-tak.lt/ "Kids rental service LT"))
-* ([website](https://staralliancerealty.com/ "Real Estate agency"))
-
-
 ### Languages: ###
-- **English:** B2 _(fluent communication skills)_ 
+- **English:** B2 _(fluent communication skills)_
 - **Russian:** native 
-- **Belorussian:** B2
