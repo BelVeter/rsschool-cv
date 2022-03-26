@@ -1,5 +1,5 @@
 # Dmitry Naydenov #
-![photo](./photo.png "Photo")
+![photo](./pictures/photo.png "Photo")
 
 ### Contact details: ###
 
